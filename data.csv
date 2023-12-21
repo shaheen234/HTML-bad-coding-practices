@@ -1,0 +1,197 @@
+Coding Problem,Bad coding Practice,correction
+Inline style,"<p style=""color: red; font-size: 16px;"">This is a paragraph with inline styles.</p>",.styled-text {text-align: center;font-size: 18px;}
+Inline style,"<span style=""font-weight: bold; color: blue;"">This is a bold and blue text.</span>",.bold-blue-text {font-weight: bold; color: blue;}
+Inline style,"<div style=""background-color: #ffcc00; padding: 10px;"">Yellow background with padding.</div>",.yellow-background {background-color: #ffcc00; padding: 10px;}
+Inline style,"<h2 style=""text-decoration: underline; color: green;"">Underlined green heading.</h2>",.underlined-green-heading {text-decoration: underline; color: green;}
+Inline style,"<a style=""text-decoration: none; color: #9900cc;"" href=""#"">Purple link without underline.</a>",.purple-link {text-decoration: none; color: #9900cc;}
+Inline style,"<p style=""font-family: 'Courier New', monospace; font-size: 14px;"">Monospaced font with specified size.</p>",".monospaced-text {font-family: 'Courier New', monospace; font-size: 14px;}"
+Inline style,"<li style=""list-style-type: square; color: brown;"">Brown square list item.</li>",.brown-square-list-item {list-style-type: square; color: brown;}
+Inline style,"<span style=""border: 1px solid #666; padding: 5px;"">Gray border with padding.</span>",.gray-border {border: 1px solid #666; padding: 5px;}
+Inline style,"<h3 style=""font-style: italic; color: #ff9966;"">Italicized and orange heading.</h3>",.italic-orange-heading {font-style: italic; color: #ff9966;}
+Inline style,"<div style=""margin: 10px; background-color: #f0f0f0;"">Light gray background with margin.</div>","<div style=""margin: 10px; background-color: #f0f0f0;"">Light gray background with margin.</div>"
+Excessive Use of <br> Tags:,<p>This is some text.<br><br>And this is more text.</p>,"<div class=""content""><p>This is some content.</p><p>And more content.</p></div>"
+Excessive Use of <br> Tags:,<p>This is <br><br> a paragraph <br> with excessive line breaks.</p>,"<div class=""content""><p>This is a paragraph with excessive line breaks.</p></div>"
+Excessive Use of <br> Tags:,<div>This is some text.<br><br><br>And this is more text.<br><br></div>,"<div class=""content""><p>This is some text.</p><p>And this is more text.</p></div>"
+Excessive Use of <br> Tags:,<p>Text with<br> <br>multiple line breaks.<br><br><br></p>,"<div class=""content""><p>Text with multiple line breaks.</p></div>"
+Excessive Use of <br> Tags:,<div><br><br>This div has excessive line breaks.<br><br><br><br></div>,"<div class=""content""><p>This div has excessive line breaks.</p></div>"
+Excessive Use of <br> Tags:,<p>Line break<br>after every word<br>is not<br>sustainable.<br><br></p>,"<div class=""content""><p>Too many breaks between lines.</p></div>"
+Excessive Use of <br> Tags:,<p>Excessive<br>line<br>breaks<br>are<br>not<br>ideal.<br><br><br></p>,"<div class=""content""><p>Excessive line breaks are not ideal.</p></div>"
+Excessive Use of <br> Tags:,<div><br>Breaking<br>lines<br>excessively.<br><br><br></div>,"<div class=""content""><p>Breaking lines excessively.</p></div>"
+Excessive Use of <br> Tags:,<p>Using<br><br>line breaks<br>too<br>frequently.<br><br></p>,"<div class=""content""><p>Using line breaks too frequently.</p></div>"
+Excessive Use of <br> Tags:,<div><br><br><br>Content<br>with<br>excessive<br>line breaks.<br><br></div>,"<div class=""content""><p>Content with excessive line breaks.</p></div>"
+Deprecated Elements:,<center><h2>Deprecated Heading</h2></center>,.centered-heading {text-align: center;}
+Deprecated Elements:,"<font color=""blue"">This text is in blue.</font>",.blue-text {color: blue;}
+Deprecated Elements:,<strike>This text is strikethrough.</strike>,.strikethrough-text {text-decoration: line-through;}
+Deprecated Elements:,<center><p>Centered paragraph.</p></center>,.centered-paragraph {text-align: center;}
+Deprecated Elements:,<u>Underlined text</u>,.underlined-text {text-decoration: underline;}
+Deprecated Elements:,<samp>Sample text</samp>,.sample-text {font-family: monospace;}
+Deprecated Elements:,<big>This text is bigger than normal.</big>,.bigger-text {font-size: larger;}
+Deprecated Elements:,"<font face=""Arial"">This text is in Arial font.</font>",".arial-font {font-family: Arial, sans-serif;}"
+Deprecated Elements:,<tt>Typewriter text</tt>,.typewriter-text {font-family: monospace;}
+Deprecated Elements:,"<marquee behavior=""scroll"" direction=""left"">Scrolling text</marquee>",".scrolling-text {animation: marquee-scroll-left 5s linear infinite;}
+@keyframes marquee-scroll-left {from {transform: translateX(100%);} to {transform: translateX(-100%);}}"
+Non-Semantic Structure,"<div id=""header"">Header</div><div id=""nav"">Navigation</div><div id=""content"">Main Content</div><div id=""footer"">Footer</div>",<header>Header</header><main>Main Content</main><footer>Footer</footer>
+Non-Semantic Structure,"<div id=""wrapper"">Site Wrapper</div><div id=""sidebar"">Sidebar</div><div id=""main"">Main Content</div><div id=""extra"">Extra Content</div>",<main>Main Content</main><aside>Sidebar</aside><section>Extra Content</section>
+Non-Semantic Structure,"<div id=""container"">Container</div><div id=""left-column"">Left Column</div><div id=""right-column"">Right Column</div>",<section>Left Column</section><section>Right Column</section>
+Non-Semantic Structure,"<div id=""box1"">Box 1</div><div id=""box2"">Box 2</div><div id=""box3"">Box 3</div>",<aside>Box 1</aside><article>Box 2</article><section>Box 3</section>
+Non-Semantic Structure,"<div id=""panel"">Panel</div><div id=""menu"">Menu</div><div id=""main-content"">Main Content</div>",<aside>Panel</aside><nav>Menu</nav><main>Main Content</main>
+Non-Semantic Structure,"<div id=""section1"">Section 1</div><div id=""section2"">Section 2</div><div id=""section3"">Section 3</div>",<section>Section 1</section><section>Section 2</section><section>Section 3</section>
+Non-Semantic Structure,"<div id=""boxA"">Box A</div><div id=""boxB"">Box B</div><div id=""boxC"">Box C</div>",<aside>Box A</aside><article>Box B</article><section>Box C</section>
+Non-Semantic Structure,"<div id=""block1"">Block 1</div><div id=""block2"">Block 2</div><div id=""block3"">Block 3</div>",<aside>Block 1</aside><article>Block 2</article><section>Block 3</section>
+Non-Semantic Structure,"<div id=""areaA"">Area A</div><div id=""areaB"">Area B</div><div id=""areaC"">Area C</div>",<aside>Area A</aside><article>Area B</article><section>Area C</section>
+Non-Semantic Structure,"<div id=""content1"">Content 1</div><div id=""content2"">Content 2</div><div id=""content3"">Content 3</div>",<section>Content 1</section><section>Content 2</section><section>Content 3</section>
+Missing Alt Attributes:,"<img src=""image.jpg"" />","<img src=""image.jpg"" alt=""Descriptive alt text"">"
+Missing Alt Attributes:,"<img src=""photo.png"" />","<img src=""photo.png"" alt=""Photograph of a scenic view"">"
+Missing Alt Attributes:,"<img src=""icon.png"" />","<img src=""icon.png"" alt=""Icon representing a specific action"">"
+Missing Alt Attributes:,"<img src=""avatar.jpg"" />","<img src=""avatar.jpg"" alt=""User profile avatar"">"
+Missing Alt Attributes:,"<img src=""product.jpg"" />","<img src=""product.jpg"" alt=""Image of a featured product"">"
+Missing Alt Attributes:,"<img src=""logo.png"" />","<img src=""logo.png"" alt=""Company logo"">"
+Missing Alt Attributes:,"<img src=""chart.png"" />","<img src=""chart.png"" alt=""Graphical representation of data"">"
+Missing Alt Attributes:,"<img src=""document.png"" />","<img src=""document.png"" alt=""Icon representing a document"">"
+Missing Alt Attributes:,"<img src=""map.png"" />","<img src=""map.png"" alt=""Map illustration"">"
+Missing Alt Attributes:,"<img src=""news.jpg"" />","<img src=""news.jpg"" alt=""Image related to a news article"">"
+Unclosed Tags,<p>This paragraph has no closing tag.,<p>This paragraph has a closing tag.</p><div>This div is properly closed.</div>
+Unclosed Tags,"<ul>
+  <li>Unclosed list item
+  <li>Another list item
+</ul>","<ul>
+  <li>Properly closed list item</li>
+  <li>Another list item</li>
+</ul>"
+Unclosed Tags,"<strong>This strong tag is not closed.
+<p>Paragraph without closing tag.","<strong>This strong tag is properly closed.</strong>
+<p>Paragraph with a closing tag.</p>"
+Unclosed Tags,<em>Unclosed emphasis tag,<em>Properly closed emphasis tag</em>
+Unclosed Tags,<span>Unclosed span tag,<span>Properly closed span tag</span>
+Unclosed Tags,"<a href=""#"">Unclosed link tag","<a href=""#"">Properly closed link tag</a>"
+Unclosed Tags,"<img src=""image.jpg"" alt=""Image without closing tag"">","<img src=""image.jpg"" alt=""Image with a closing tag"" />"
+Unclosed Tags,<h3>Heading without closing tag,<h3>Properly closed heading</h3>
+Unclosed Tags,<div>Unclosed div tag,<div>Properly closed div tag</div>
+Table Layouts for Non-Tabular Data:,"<table border=""1""><tr><td>Column 1</td><td>Column 2</td></tr></table>",".table-container {display: grid;grid-template-columns: auto auto;}
+"
+Table Layouts for Non-Tabular Data:,"<table border=""1"">
+  <tr>
+    <td>Item 1</td>
+    <td>Item 2</td>
+  </tr>
+</table>",".container {display: flex; justify-content: space-between;}
+<div class=""container"">
+  <div>Item 1</div>
+  <div>Item 2</div>
+</div>"
+Table Layouts for Non-Tabular Data:,"<table border=""1"">
+  <tr>
+    <td>Section 1</td>
+    <td>Section 2</td>
+  </tr>
+</table>
+",".container {display: grid; grid-template-columns: 1fr 1fr;}
+<div class=""container"">
+  <div>Section 1</div>
+  <div>Section 2</div>
+</div>"
+Table Layouts for Non-Tabular Data:,"<table border=""1"">
+  <tr>
+    <td>Task 1</td>
+    <td>Task 2</td>
+  </tr>
+</table>",".container {display: flex; justify-content: space-around;}
+<div class=""container"">
+  <div>Task 1</div>
+  <div>Task 2</div>
+</div>"
+Table Layouts for Non-Tabular Data:,"<table border=""1"">
+  <tr>
+    <td>Category A</td>
+    <td>Category B</td>
+  </tr>
+</table>",".container {display: grid; grid-template-columns: repeat(2, 1fr);}
+<div class=""container"">
+  <div>Category A</div>
+  <div>Category B</div>
+</div>"
+Table Layouts for Non-Tabular Data:,"<table border=""1"">
+  <tr>
+    <td>Feature 1</td>
+    <td>Feature 2</td>
+  </tr>
+</table>",".container {display: flex;}
+<div class=""container"">
+  <div>Feature 1</div>
+  <div>Feature 2</div>
+</div>"
+Table Layouts for Non-Tabular Data:,"<table border=""1"">
+  <tr>
+    <td>Item A</td>
+    <td>Item B</td>
+  </tr>
+</table>",".container {display: grid; grid-template-columns: repeat(2, auto);}
+<div class=""container"">
+  <div>Item A</div>
+  <div>Item B</div>
+</div>"
+Table Layouts for Non-Tabular Data:,"<table border=""1"">
+  <tr>
+    <td>Option 1</td>
+    <td>Option 2</td>
+  </tr>
+</table>",".container {display: flex;}
+<div class=""container"">
+  <div>Option 1</div>
+  <div>Option 2</div>
+</div>"
+Table Layouts for Non-Tabular Data:,"<table border=""1"">
+  <tr>
+    <td>Choice X</td>
+    <td>Choice Y</td>
+  </tr>
+</table>",".container {display: grid; grid-template-columns: repeat(2, 1fr);}
+<div class=""container"">
+  <div>Choice X</div>
+  <div>Choice Y</div>
+</div>"
+Table Layouts for Non-Tabular Data:,"<table border=""1"">
+  <tr>
+    <td>Element P</td>
+    <td>Element Q</td>
+  </tr>
+</table>",".container {display: flex; justify-content: space-between;}
+<div class=""container"">
+  <div>Element P</div>
+  <div>Element Q</div>
+</div>"
+Hard coding styles,"<p style=""font-family: Arial; color: blue;"">Avoid hard-coding styles. Use a separate CSS file.</p>",.styled-paragraph {font-family: Arial;color: blue;}
+Hard coding styles,"<h3 style=""font-size: 20px; color: red;"">This heading has inline styles.</h3>",.styled-heading {font-size: 20px; color: red;}
+Hard coding styles,"<span style=""text-decoration: underline; font-weight: bold;"">This text has multiple inline styles.</span>",.styled-text {text-decoration: underline; font-weight: bold;}
+Hard coding styles,"<div style=""background-color: #ffeecc; padding: 10px;"">A div with inline background color and padding.</div>",.styled-div {background-color: #ffeecc; padding: 10px;}
+Hard coding styles,"<p style=""font-style: italic; text-align: center;"">Centered and italicized paragraph.</p>",.centered-italic-paragraph {font-style: italic; text-align: center;}
+Hard coding styles,"<a style=""color: green; text-decoration: none;"">Green link without underline.</a>",.green-link {color: green; text-decoration: none;}
+Hard coding styles,"<span style=""font-size: 14px; font-weight: normal;"">Small and normal-weight text.</span>",.small-normal-text {font-size: 14px; font-weight: normal;}
+Hard coding styles,"<button style=""background-color: #3366cc; color: white;"">Blue button with white text.</button>",.blue-button {background-color: #3366cc; color: white;}
+Hard coding styles,"<h4 style=""color: #990000; font-weight: bold;"">Red and bold heading.</h4>",.red-bold-heading {color: #990000; font-weight: bold;}
+Hard coding styles,"<div style=""margin-top: 20px; margin-bottom: 20px;"">Div with specific top and bottom margins.</div>",.margined-div {margin-top: 20px; margin-bottom: 20px;}
+Hard coding styles,"<span style=""text-transform: uppercase; letter-spacing: 2px;"">Uppercase text with increased letter spacing.</span>",.uppercase-letter-spacing-text {text-transform: uppercase; letter-spacing: 2px;}
+Ignoring HTML5 Doctype,<html><head><!-- No doctype declaration --></head><body>,<!DOCTYPE html><html><head><!-- Head content -->
+Ignoring HTML5 Doctype,<html><head><!-- No doctype declaration --></head><body>,<!DOCTYPE html><html><head><!-- Head content --></head><body>
+Ignoring HTML5 Doctype,<html><head></head><body><!-- No doctype declaration --></body></html>,<!DOCTYPE html><html><head></head><body><!-- Body content --></body></html>
+Ignoring HTML5 Doctype,"<html lang=""en""><head><!-- No doctype declaration --></head><body>","<!DOCTYPE html><html lang=""en""><head><!-- Head content --></head><body>"
+Ignoring HTML5 Doctype,"<html><head><meta charset=""UTF-8""><!-- No doctype declaration --></head><body>","<!DOCTYPE html><html><head><meta charset=""UTF-8""><!-- Head content --></head><body>"
+Ignoring HTML5 Doctype,<html><head><title>Page Title</title><!-- No doctype declaration --></head><body>,<!DOCTYPE html><html><head><title>Page Title</title><!-- Head content --></head><body>
+Ignoring HTML5 Doctype,<html><head></head><body><!-- No doctype declaration --></body></html>,<!DOCTYPE html><html><head></head><body><!-- Body content --></body></html>
+Ignoring HTML5 Doctype,"<html><head><!-- No doctype declaration --></head><body><script src=""script.js""></script></body></html>","<!DOCTYPE html><html><head><!-- Head content --></head><body><script src=""script.js""></script></body></html>"
+Ignoring HTML5 Doctype,<html><head></head><body><!-- No doctype declaration --></body></html>,<!DOCTYPE html><html><head></head><body><!-- Body content --></body></html>
+Ignoring HTML5 Doctype,<html><head></head><body><!-- No doctype declaration --></body></html>,<!DOCTYPE html><html><head></head><body><!-- Body content --></body></html>
+Overreliance on Deprecated Attributes:,"<table align=""center"" bgcolor=""#FFFF00""><tr><td>Content</td>",.content {text-align: center;background-color: #FFFF00;}
+Overreliance on Deprecated Attributes:,"<center><h3 style=""color: #9900cc;"">Centered heading with inline color.</h3></center>",.centered-heading {text-align: center; color: #9900cc;}
+Overreliance on Deprecated Attributes:,"<font size=""4"" face=""Verdana"" color=""#008000"">Green text with specific size and font.</font>",".green-text {font-size: 1rem; font-family: Verdana, sans-serif; color: #008000;}"
+Overreliance on Deprecated Attributes:,"<table border=""2"" cellpadding=""10"" cellspacing=""5"" width=""80%"">
+  <tr><td>Table with deprecated attributes.</td></tr>
+</table>
+",.styled-table {border: 2px solid; padding: 10px; border-collapse: collapse; width: 80%;}
+Overreliance on Deprecated Attributes:,"<p align=""right"" style=""margin-right: 20px;"">Right-aligned paragraph with inline margin.</p>",.right-aligned-paragraph {text-align: right; margin-right: 20px;}
+Overreliance on Deprecated Attributes:,"<img align=""left"" hspace=""10"" vspace=""5"" src=""image.jpg"" alt=""Image with deprecated attributes."" />",.styled-image {float: left; margin-right: 10px; margin-bottom: 5px;}
+Overreliance on Deprecated Attributes:,<strike><i>Strikethrough and italicized text</i></strike>,.strikethrough-italic-text {text-decoration: line-through; font-style: italic;}
+Overreliance on Deprecated Attributes:,"<marquee behavior=""scroll"" direction=""left"">Scrolling text with deprecated marquee tag.</marquee>",".scrolling-text {animation: marquee-scroll-left 5s linear infinite;}
+@keyframes marquee-scroll-left {from {transform: translateX(100%);} to {transform: translateX(-100%);}}"
+Overreliance on Deprecated Attributes:,<b>Bold text using deprecated bold tag.</b>,.bold-text {font-weight: bold;}
+Overreliance on Deprecated Attributes:,"<div align=""center"" style=""width: 50%;"">Centered div with inline width.</div>",.centered-div {text-align: center; width: 50%;}
