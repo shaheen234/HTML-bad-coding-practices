@@ -10,7 +10,7 @@ This document provides a brief explanation of the parameters, training process, 
 - **tokenizer**: Tokenizer associated with the T5 model.
 - **train_dataset**: Training dataset (instance of `HtmlDataset`).
 - **epochs**: Number of training epochs (default is 3).
-- **learning_rate**: Learning rate for the optimizer (default is 5e-5).
+- **learning_rate**: 0.001.
 
 ## Training
 
